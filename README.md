@@ -1,6 +1,6 @@
-# Project name
+# scratch
 
-One or two sentences: what this does and who it's for.
+Test repo for the Treedome Technologies bots: their PRs, reviews and issues are exercised here. Nothing in it is meant for use.
 
 ## Install
 
