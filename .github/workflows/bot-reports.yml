@@ -14,5 +14,5 @@ jobs:
     permissions:
       actions: read
       pull-requests: read
-    uses: Treedome-Technologies/.github/.github/workflows/bot-reports-shared.yml@ec89198fd4c11eeaf2ea96b2049ef5131f066938 # main, to become v1.0.0
+    uses: Treedome-Technologies/.github/.github/workflows/bot-reports-shared.yml@main
     secrets: inherit
