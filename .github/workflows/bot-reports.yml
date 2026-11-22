@@ -1,0 +1,18 @@
+# Bot reports: the Treedome bots' scripted reports on pull requests, after ci finishes.
+name: bot-reports
+
+on:
+  workflow_run:
+    workflows: [ci]
+    types: [completed]
+
+permissions: {}
+
+jobs:
+  report:
+    if: github.event.workflow_run.event == 'pull_request'
+    permissions:
+      actions: read
+      pull-requests: read
+    uses: Treedome-Technologies/.github/.github/workflows/bot-reports-shared.yml@3b29da8185c8f312021376339d8c6d9b4f3fc07c # bot-reports branch, under test
+    secrets: inherit
